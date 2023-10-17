@@ -5,40 +5,40 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
-    tools:context=".activities.InsertionActivity">
+    >
 
     <EditText
         android:id="@+id/etEmpName"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="353dp"
+        android:layout_height="89dp"
         android:layout_marginTop="50dp"
         android:ems="10"
+        android:hint="Entrar nombre del chocolate"
         android:inputType="textPersonName"
-        android:hint="Enter name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/etEmpAge"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="348dp"
+        android:layout_height="94dp"
         android:layout_marginTop="20dp"
         android:ems="10"
+        android:hint="Ingrese la fecha de expiracion"
         android:inputType="textPersonName"
-        android:hint="Enter age"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etEmpName" />
 
     <EditText
         android:id="@+id/etEmpSalary"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="347dp"
+        android:layout_height="100dp"
         android:layout_marginTop="20dp"
         android:ems="10"
+        android:hint="Ingrese el precio"
         android:inputType="textPersonName"
-        android:hint="Enter salary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etEmpAge" />
