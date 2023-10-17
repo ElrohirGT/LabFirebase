@@ -8,11 +8,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.uvg_firebase'
+    namespace 'com.uvg.gt.labfirebase'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.uvg_firebase"
+        applicationId "com.uvg.gt.labfirebase"
         minSdk 28
         targetSdk 33
         versionCode 1
