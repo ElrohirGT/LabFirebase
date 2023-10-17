@@ -1,15 +1,19 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+
+    // Add the Google services Gradle plugin
+    id("com.google.gms.google-services")
+
 }
 
 android {
-    namespace 'com.uvg.gt.labfirebase'
+    namespace 'com.example.uvg_firebase'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.uvg.gt.labfirebase"
-        minSdk 24
+        applicationId "com.example.uvg_firebase"
+        minSdk 28
         targetSdk 33
         versionCode 1
         versionName "1.0"
@@ -41,4 +45,9 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    // Import the Firebase BoM
+    implementation(platform("com.google.firebase:firebase-bom:32.3.1"))
+    implementation("com.google.firebase:firebase-database-ktx")
+
 }
