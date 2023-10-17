@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "45843262074",
+    "firebase_url": "https://labfirebase-choco-default-rtdb.firebaseio.com",
+    "project_id": "labfirebase-choco",
+    "storage_bucket": "labfirebase-choco.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:45843262074:android:e97a4ba31bed69e86ae9c3",
+        "android_client_info": {
+          "package_name": "com.example.uvg_firebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeQQCCeQpDbd9InFNcHeoTDHrEM-cbeD4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
