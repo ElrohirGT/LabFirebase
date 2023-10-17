@@ -17,7 +17,7 @@ import com.google.firebase.database.ValueEventListener
 class FetchingActivity : AppCompatActivity() {
     private lateinit var rvChocolates: RecyclerView
     private lateinit var tvLoadingData: TextView
-    private lateinit var empList: ArrayList<ChocolateModel>
+    private lateinit var chocolatelist: ArrayList<ChocolateModel>
     private lateinit var dbRef: DatabaseReference
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -29,7 +29,7 @@ class FetchingActivity : AppCompatActivity() {
         rvChocolates.setHasFixedSize(true)
         tvLoadingData = findViewById(R.id.tvLoadingData)
 
-        empList = arrayListOf<ChocolateModel>()
+        chocolatelist = arrayListOf<ChocolateModel>()
 
         getEmployeesData()
 
@@ -44,13 +44,13 @@ class FetchingActivity : AppCompatActivity() {
 
         dbRef.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
-                empList.clear()
+                chocolatelist.clear()
                 if (snapshot.exists()){
                     for (empSnap in snapshot.children){
                         val empData = empSnap.getValue(ChocolateModel::class.java)
-                        empList.add(empData!!)
+                        chocolatelist.add(empData!!)
                     }
-                    val mAdapter = EmpAdapter(empList)
+                    val mAdapter = EmpAdapter(chocolatelist)
                     rvChocolates.adapter = mAdapter
 
                     mAdapter.setOnItemClickListener(object : EmpAdapter.onItemClickListener{
@@ -59,10 +59,10 @@ class FetchingActivity : AppCompatActivity() {
                             val intent = Intent(this@FetchingActivity, EmployeeDetailsActivity::class.java)
 
                             //put extras
-                            intent.putExtra("empId", empList[position].chocolateId)
-                            intent.putExtra("empName", empList[position].name)
-                            intent.putExtra("empAge", empList[position].expireDate)
-                            intent.putExtra("empSalary", empList[position].price)
+                            intent.putExtra("chocolateId", chocolatelist[position].chocolateId)
+                            intent.putExtra("name", chocolatelist[position].name)
+                            intent.putExtra("expireDate", chocolatelist[position].expireDate)
+                            intent.putExtra("price", chocolatelist[position].price)
                             startActivity(intent)
                         }
 
