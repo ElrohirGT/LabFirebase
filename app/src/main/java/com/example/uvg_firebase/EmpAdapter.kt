@@ -11,7 +11,7 @@ class EmpAdapter(private val empList: ArrayList<EmployeeModel>) :
 
     private lateinit var mListener: onItemClickListener
 
-    interface onItemClickListener{
+    interface onItemClickListener{//data
         fun onItemClick(position: Int)
     }
 
