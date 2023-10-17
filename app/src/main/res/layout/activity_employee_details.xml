@@ -74,7 +74,7 @@
                 android:layout_weight="1.4">
 
                 <TextView
-                    android:id="@+id/tvEmpId"
+                    android:id="@+id/tvchocid"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -124,7 +124,7 @@
                 android:layout_weight="1.4">
 
                 <TextView
-                    android:id="@+id/tvEmpName"
+                    android:id="@+id/tvchocname"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -178,7 +178,7 @@
                 android:layout_weight="1.4">
 
                 <TextView
-                    android:id="@+id/tvEmpAge"
+                    android:id="@+id/tvchoexpire"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -234,7 +234,7 @@
                 android:layout_weight="1.4">
 
                 <TextView
-                    android:id="@+id/tvEmpSalary"
+                    android:id="@+id/tvchocprice"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
