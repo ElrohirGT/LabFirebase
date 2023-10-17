@@ -11,10 +11,10 @@ import android.widget.Toast
 import com.google.firebase.database.FirebaseDatabase
 
 class EmployeeDetailsActivity : AppCompatActivity() {
-    private lateinit var tvEmpId: TextView
-    private lateinit var tvEmpName: TextView
-    private lateinit var tvEmpAge: TextView
-    private lateinit var tvEmpSalary: TextView
+    private lateinit var tvchocid: TextView
+    private lateinit var tvchocname: TextView
+    private lateinit var tvchoexpire: TextView
+    private lateinit var tvchocprice: TextView
     private lateinit var btnUpdate: Button
     private lateinit var btnDelete: Button
 
@@ -42,20 +42,20 @@ class EmployeeDetailsActivity : AppCompatActivity() {
     }
 
     private fun initView() {
-        tvEmpId = findViewById(R.id.tvEmpId)
-        tvEmpName = findViewById(R.id.tvEmpName)
-        tvEmpAge = findViewById(R.id.tvEmpAge)
-        tvEmpSalary = findViewById(R.id.tvEmpSalary)
+        tvchocid = findViewById(R.id.tvchocid)
+        tvchocname = findViewById(R.id.tvchocname)
+        tvchoexpire = findViewById(R.id.tvchoexpire)
+        tvchocprice = findViewById(R.id.tvchocprice)
 
         btnUpdate = findViewById(R.id.btnUpdate)
         btnDelete = findViewById(R.id.btnDelete)
     }
 
     private fun setValuesToViews() {
-        tvEmpId.text = intent.getStringExtra("chocolateId")
-        tvEmpName.text = intent.getStringExtra("name")
-        tvEmpAge.text = intent.getStringExtra("expireDate")
-        tvEmpSalary.text = intent.getStringExtra("price")
+        tvchocid.text = intent.getStringExtra("chocolateId")
+        tvchocname.text = intent.getStringExtra("name")
+        tvchoexpire.text = intent.getStringExtra("expireDate")
+        tvchocprice.text = intent.getStringExtra("price")
 
     }
 
@@ -112,9 +112,9 @@ class EmployeeDetailsActivity : AppCompatActivity() {
             Toast.makeText(applicationContext, "Employee Data Updated", Toast.LENGTH_LONG).show()
 
             //we are setting updated data to our textviews
-            tvEmpName.text = etEmpName.text.toString()
-            tvEmpAge.text = etEmpAge.text.toString()
-            tvEmpSalary.text = etEmpSalary.text.toString()
+            tvchocname.text = etEmpName.text.toString()
+            tvchoexpire.text = etEmpAge.text.toString()
+            tvchocprice.text = etEmpSalary.text.toString()
 
             alertDialog.dismiss()
         }
