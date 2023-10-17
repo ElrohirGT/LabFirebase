@@ -62,11 +62,11 @@ class EmployeeDetailsActivity : AppCompatActivity() {
     private fun deleteRecord(
         id: String
     ){
-        val dbRef = FirebaseDatabase.getInstance().getReference("Employees").child(id)
+        val dbRef = FirebaseDatabase.getInstance().getReference("Chocolates").child(id)
         val mTask = dbRef.removeValue()
 
         mTask.addOnSuccessListener {
-            Toast.makeText(this, "Employee data deleted", Toast.LENGTH_LONG).show()
+            Toast.makeText(this, "Chocolate data deleted", Toast.LENGTH_LONG).show()
 
             val intent = Intent(this, FetchingActivity::class.java)
             finish()
@@ -92,9 +92,9 @@ class EmployeeDetailsActivity : AppCompatActivity() {
 
         val btnUpdateData = mDialogView.findViewById<Button>(R.id.btnUpdateData)
 
-        etEmpName.setText(intent.getStringExtra("empName").toString())
-        etEmpAge.setText(intent.getStringExtra("empAge").toString())
-        etEmpSalary.setText(intent.getStringExtra("empSalary").toString())
+        etEmpName.setText(intent.getStringExtra("name").toString())
+        etEmpAge.setText(intent.getStringExtra("expireDate").toString())
+        etEmpSalary.setText(intent.getStringExtra("price").toString())
 
         mDialog.setTitle("Updating $empName Record")
 
@@ -109,7 +109,7 @@ class EmployeeDetailsActivity : AppCompatActivity() {
                 etEmpSalary.text.toString()
             )
 
-            Toast.makeText(applicationContext, "Employee Data Updated", Toast.LENGTH_LONG).show()
+            Toast.makeText(applicationContext, "Chocolate Data Updated", Toast.LENGTH_LONG).show()
 
             //we are setting updated data to our textviews
             tvchocname.text = etEmpName.text.toString()
@@ -123,11 +123,11 @@ class EmployeeDetailsActivity : AppCompatActivity() {
     private fun updateEmpData(
         id: String,
         name: String,
-        age: String,
-        salary: String
+        expireDate: String,
+        price: String
     ) {
         val dbRef = FirebaseDatabase.getInstance().getReference("Chocolates").child(id)
-        val empInfo = ChocolateModel(id, name, age, salary)
+        val empInfo = ChocolateModel(id, name, expireDate, price)
         dbRef.setValue(empInfo)
     }
 
