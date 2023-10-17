@@ -28,14 +28,14 @@ class EmployeeDetailsActivity : AppCompatActivity() {
 
         btnUpdate.setOnClickListener {
             openUpdateDialog(
-                intent.getStringExtra("empId").toString(),
-                intent.getStringExtra("empName").toString()
+                intent.getStringExtra("chocolateId").toString(),
+                intent.getStringExtra("name").toString()
             )
         }
 
         btnDelete.setOnClickListener {
             deleteRecord(
-                intent.getStringExtra("empId").toString()
+                intent.getStringExtra("chocolateId").toString()
             )
         }
 
@@ -52,10 +52,10 @@ class EmployeeDetailsActivity : AppCompatActivity() {
     }
 
     private fun setValuesToViews() {
-        tvEmpId.text = intent.getStringExtra("empId")
-        tvEmpName.text = intent.getStringExtra("empName")
-        tvEmpAge.text = intent.getStringExtra("empAge")
-        tvEmpSalary.text = intent.getStringExtra("empSalary")
+        tvEmpId.text = intent.getStringExtra("chocolateId")
+        tvEmpName.text = intent.getStringExtra("name")
+        tvEmpAge.text = intent.getStringExtra("expireDate")
+        tvEmpSalary.text = intent.getStringExtra("price")
 
     }
 
