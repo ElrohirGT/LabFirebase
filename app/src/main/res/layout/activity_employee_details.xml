@@ -54,14 +54,15 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.6"
-                android:background="@color/divider_grey">
+                android:background="#03A9F4"
+                android:backgroundTint="@color/design_default_color_primary">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:gravity="center"
-                    android:text="Emp id"
+                    android:text="Chocolate Id"
                     android:textColor="@color/black"
                     android:textSize="15sp" />
 
@@ -103,14 +104,15 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.6"
-                android:background="@color/divider_grey">
+                android:background="#03A9F4"
+                android:backgroundTint="@color/design_default_color_secondary">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:gravity="center"
-                    android:text="Emp Name"
+                    android:text="Name"
                     android:textColor="@color/black"
                     android:textSize="15sp" />
 
@@ -153,14 +155,15 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.6"
-                android:background="@color/divider_grey">
+                android:background="@color/divider_grey"
+                android:backgroundTint="@color/design_default_color_primary">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:gravity="center"
-                    android:text="Emp Age"
+                    android:text="Expired Date"
                     android:textColor="@color/black"
                     android:textSize="15sp"
 
@@ -207,7 +210,8 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.6"
-                android:background="@color/divider_grey">
+                android:background="@color/divider_grey"
+                android:backgroundTint="@color/design_default_color_secondary">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -215,7 +219,7 @@
                     android:layout_gravity="center"
 
                     android:gravity="center"
-                    android:text="Emp Salary"
+                    android:text="Price"
                     android:textColor="@color/black"
                     android:textSize="15sp"
 

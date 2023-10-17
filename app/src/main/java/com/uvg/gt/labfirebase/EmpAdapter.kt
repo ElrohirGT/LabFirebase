@@ -1,4 +1,5 @@
-package com.example.uvg_firebase
+package com.uvg.gt.labfirebase
+
 
 import android.view.LayoutInflater
 import android.view.View

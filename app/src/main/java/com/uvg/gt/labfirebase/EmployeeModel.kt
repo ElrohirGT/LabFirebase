@@ -1,4 +1,4 @@
-package com.example.uvg_firebase
+package com.uvg.gt.labfirebase
 
 data class EmployeeModel(
     var empId: String? = null,

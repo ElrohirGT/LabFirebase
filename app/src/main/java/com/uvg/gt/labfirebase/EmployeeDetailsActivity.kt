@@ -1,4 +1,4 @@
-package com.example.uvg_firebase
+package com.uvg.gt.labfirebase
 
 import android.app.AlertDialog
 import android.content.Intent

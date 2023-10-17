@@ -1,4 +1,4 @@
-package com.example.uvg_firebase
+package com.uvg.gt.labfirebase
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
