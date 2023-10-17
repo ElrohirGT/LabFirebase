@@ -51,7 +51,7 @@ class InsertionActivity : AppCompatActivity() {
 
         val empId = dbRef.push().key!!
 
-        val employee = EmployeeModel(empId, empName, empAge, empSalary)
+        val employee = ChocolateModel(empId, empName, empAge, empSalary)
 
         dbRef.child(empId).setValue(employee)
             .addOnCompleteListener {

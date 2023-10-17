@@ -7,7 +7,7 @@
     tools:context="FetchingActivity">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvEmp"
+        android:id="@+id/rvChocolates"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginStart="1dp"

@@ -127,7 +127,7 @@ class EmployeeDetailsActivity : AppCompatActivity() {
         salary: String
     ) {
         val dbRef = FirebaseDatabase.getInstance().getReference("Employees").child(id)
-        val empInfo = EmployeeModel(id, name, age, salary)
+        val empInfo = ChocolateModel(id, name, age, salary)
         dbRef.setValue(empInfo)
     }
 
